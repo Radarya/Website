@@ -1,0 +1,102 @@
+.page {
+  max-width: 440px;
+    padding: 0 20px;
+    margin: 100px auto;
+  }
+  .kolom {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+  .kolom .title {
+    height: 90px;
+    background: #1abc9c;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .kolom form {
+    padding: 30px 25px 25px 25px;
+  }
+  .kolom form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .kolom form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  form .row input:focus {
+    border-color: #1abc9c;
+    box-shadow: inset 0px 0px 2px 2px #1abc9c;
+  }
+  form .row input::placeholder {
+    color: #999;
+    text-align: center;
+  }
+  .kolom form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #333;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3;
+  }
+  .kolom form .row i:hover {
+   background: #1abc9c;
+   border-color: #1abc9c;
+   animation-delay: 5s;
+  }
+  .kolom form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .kolom form .signup-link a {
+    color: #333;
+    text-decoration: none;
+    font-size: large;
+  }
+  form .signup-link a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-aspect-ratio: 4/3) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 4/3) {
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
